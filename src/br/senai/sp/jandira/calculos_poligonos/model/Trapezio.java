@@ -1,6 +1,6 @@
 package br.senai.sp.jandira.calculos_poligonos.model;
 
-public class Trapézio {
+public class Trapezio {
 
 	private double altura;
 	private double baseMaior;

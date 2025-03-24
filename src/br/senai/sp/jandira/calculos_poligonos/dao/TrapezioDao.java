@@ -17,10 +17,10 @@ public class TrapezioDao {
 		trapezio.setAltura(leitor.nextDouble());
 		
 		System.out.print("Digite a medida da Base Maior do trapézio:");
-		trapezio.(leitor.nextDouble());
+		trapezio.setBaseMaior(leitor.nextDouble());
 		
 		System.out.print("Digite a medida de Base Menor do trapézio:");
-		trapezio.(leitor.nextDouble());
+		trapezio.setBaseMenor(leitor.nextDouble());
 		
 		trapezio.exibirDados();
 }

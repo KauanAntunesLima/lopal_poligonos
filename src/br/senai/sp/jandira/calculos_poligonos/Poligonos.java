@@ -13,43 +13,36 @@ public class Poligonos {
 	
 	public static void main(String[] args) {
 		
-		Menu.criarMenu();
+		// Looping / Laços de repetição
+//		int contador = 0;
+//		while(contador <=100) {
+//            System.out.println("Kauan Antunes - " + contador);
+//            contador = contador +1;
+//		}
+//		
+//		String resposta = "s";
+//		while(resposta.equals("s")) {
+//			System.out.println("Estamos dando voltas ");
+//			System.out.println("Gostaria de dar mais uma volta (s/n) ");
+//			Scanner leitor = new Scanner(System.in);
+//					resposta = leitor.next();
+	//	}
 		
-//		Scanner leitor = new Scanner(System.in);
-//		
-//		System.out.print("Digite o valor do lado do quadrado:");
-//		double lado = leitor.nextDouble();
-//		leitor.nextLine();
-//		
-//		System.out.print("Qual é o seu nome?");
-//		String nome = leitor.nextLine();
-//		
-//		System.out.println("Olá, " +nome);
-//		Quadrado quadrado1 = new Quadrado();
-//		quadrado1.setLado(lado);
-//	    quadrado1.exibirDados();
-//	
-//	    Retangulo retangulo1 = new Retangulo();
-//	    retangulo1.setAltura(2);		
-//	    retangulo1.setLargura(4);
-//	    retangulo1.exibirDados();
-//
-//		Triangulo triangulo1 = new Triangulo();
-//		triangulo1.setAltura(5);
-//		triangulo1.setBase(8);
-//		triangulo1.exibirDados();
-//		
-//		Trapezio trapezio1 = new Trapezio();
-//		trapezio1.setAltura(5);
-//		trapezio1.setBaseMaior(12);
-//		trapézio1.setBaseMenor(7);
-//		trapézio1.exibirDados();
-//		
-//		Circunferencia circunferencia1 = new Circunferencia();
-//		circunferencia1.setRaio(20);
-//		circunferencia1.exibirDados();
-//
-
+		System.out.println("------Tabuada do 9---------");
 	
+		int resultado;
+		int contador = 0;
+		while(contador  <=10) {
+		resultado = contador*9;
+		System.out.println(contador + " x 9 = " + resultado);
+		contador = contador + 1;
+		}
+	
+		//Menu.criarMenu();
+		
 	}
 }
+
+	
+
+

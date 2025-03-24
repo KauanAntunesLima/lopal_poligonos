@@ -9,8 +9,10 @@ import br.senai.sp.jandira.calculos_poligonos.model.Retangulo;
 
 public class Menu {
 
+	static Scanner leitor = new Scanner(System.in);
+	
 	public static void criarMenu() {
-		Scanner leitor = new Scanner(System.in);
+		
 		System.out.println("---------------------------");
 		System.out.println("CALCULADORA DE POLÍGONOS");
 		System.out.println("---------------------------");
@@ -19,8 +21,9 @@ public class Menu {
 		System.out.println("3 - TRIÂNGULO");
 		System.out.println("4 - TRAPÉZIO");
 		System.out.println("5 - CIRCUNFERÊNCIA");
+		System.out.println("6 - SAIR");
 		System.out.println("---------------------------");
-		System.out.print("Escolha uma opção (1-5):");
+		System.out.print("Escolha uma opção (1-6):");
 		
 		int opcao = leitor.nextInt();
 		
@@ -34,12 +37,24 @@ public class Menu {
 			// Chamar o TrapezioDao
 		} else if (opcao == 5) {
 			// Chamar a CircunferenciaDao
+		}else if (opcao ==6) {
+			System.out.println("Encerrando o programa, Até mais!");
+			System.exit(0);
 		}else {
-			System.out.println("Opção inválida! Você deve escolher um número entre 1 e 5!");
+			System.out.println("Opção inválida! Você deve escolher um número entre 1 e 6!");
+			criarMenu();
 		}
 			
 		System.out.println("A opção escolhida foi " + opcao);
 
+	}
+
+	public static void retornar() {
+		// Perguntar ao usuario se ele deseja criar outra forma
+		System.out.print("Digite qualquer tecla e pressione ENTER para continuar...");
+		leitor.next();
+        criarMenu();
+		
 	}
 	
 }

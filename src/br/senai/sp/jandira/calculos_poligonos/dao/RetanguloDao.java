@@ -3,6 +3,7 @@ package br.senai.sp.jandira.calculos_poligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.jandira.calculos_poligonos.model.Retangulo;
+import br.senai.sp.jandira.calculos_poligonos.ui.Menu;
 
 
 
@@ -23,5 +24,9 @@ public static void criar() {
 		retangulo1.setAltura(leitor.nextDouble());
 		
 		retangulo1.exibirDados();
+		
+		Menu.retornar();
+		
+	
 }
 }
